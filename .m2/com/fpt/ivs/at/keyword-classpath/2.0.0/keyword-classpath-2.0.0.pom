@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- <parent>
+    <artifactId>keyword-lib</artifactId>
+    <groupId>com.fpt.ivs.at</groupId>
+    <version>2.0.0</version>
+  </parent> -->
+
+  <groupId>com.fpt.ivs.at</groupId>
+  <artifactId>keyword-classpath</artifactId>
+  <name>keyword-classpath</name>
+
+  <version>2.0.0</version>
+  <packaging>jar</packaging>  
+
+  <description>A simple keyword-classpath.</description>  
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>    
+    <dependency>
+      <groupId>com.fpt.ivs.at</groupId>
+      <artifactId>keyword-at</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+      <plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>download-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sources</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>build-classpath</id>
+            <phase>install</phase>
+            <goals>
+              <goal>build-classpath</goal>
+            </goals>
+            <configuration>
+              <outputFile>${project.basedir}/../../resources/templates/cp</outputFile>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

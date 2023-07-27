@@ -1,0 +1,72 @@
+{
+  "settings": {
+    "manager.projectId": "",
+    "project.path": "D:\\ANHTESTER\\akaATStudio\\Course_2023\\akaATStudioLearningAnhTester2023"
+  },
+  "runProfiles": [
+    {
+      "id": "ProfileChrome",
+      "platformType": "Web",
+      "capability": {
+        "capUUID": "f74ceeb7-2e23-43f6-803c-5dc3c4457d4c"
+      },
+      "gvProfile": {
+        "profileId": "GlobalChrome"
+      },
+      "colorCode": "#52c41a",
+      "profile": {
+        "configCapability": {
+          "browser": "chrome"
+        }
+      }
+    },
+    {
+      "id": "ProfileEdge",
+      "platformType": "Web",
+      "capability": {
+        "capUUID": "dc955062-60f3-403c-817b-d542883a34c1"
+      },
+      "gvProfile": {
+        "profileId": "GlobalEdge"
+      },
+      "colorCode": "#597ef7",
+      "profile": {
+        "configCapability": {
+          "browser": "edge"
+        }
+      }
+    },
+    {
+      "id": "ChromeCMS",
+      "platformType": "Web",
+      "capability": {
+        "capUUID": "f74ceeb7-2e23-43f6-803c-5dc3c4457d4c"
+      },
+      "gvProfile": {
+        "profileId": "Global_CMS"
+      },
+      "colorCode": "#fa8c16",
+      "profile": {
+        "configCapability": {
+          "browser": "chrome"
+        }
+      }
+    },
+    {
+      "id": "EdgeCMS",
+      "platformType": "Web",
+      "capability": {
+        "capUUID": "dc955062-60f3-403c-817b-d542883a34c1"
+      },
+      "gvProfile": {
+        "profileId": "Global_CMS"
+      },
+      "colorCode": "#1890ff",
+      "profile": {
+        "configCapability": {
+          "browser": "edge"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "locatorList": [
+    {
+      "strategy": "XPath",
+      "value": "//span[@class\u003d\u0027avatar avatar-sm mr-md-2\u0027]//img",
+      "type": [],
+      "active": true
+    }
+  ],
+  "varNode": {
+    "descendants": {
+      "REPO": {
+        "descendants": {}
+      }
+    },
+    "value": "d9f347ed-f808-4ef4-80d2-bd9b99fb6b94"
+  },
+  "type": "Web",
+  "inShadowRoot": false,
+  "parentId": "",
+  "uuid": "d9f347ed-f808-4ef4-80d2-bd9b99fb6b94"
+}
